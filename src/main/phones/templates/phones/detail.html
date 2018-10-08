@@ -1,0 +1,40 @@
+<html>
+<head>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+
+    
+<div>
+        <h1><a href="/">Detail Html Phone list</a></h1>
+
+    </div> 
+
+    <table>
+            <tr>
+                <td>a</td>
+                <td>b</td>
+                <td>c</td>
+            </tr>
+            {% load staticfiles %}
+
+            <h1>{{object.price}}</h1>
+            <h1>{{object.model_name}}</h1>
+            <h1>{{object.url}}</h1>
+            <h2>Hello world</h2>
+            <img src="{{object.url}}" >
+           <!-- {% for key, values in data.items %}
+            <tr>
+                <td>{{key}}</td>
+                {% for v in values %}
+                 <td>{{v.imgurl}}</td>
+                 <td>{{v.price}}</td>
+                   <img src="" >
+
+                    {{v.url}}> 
+                {% endfor %}
+            </tr>
+            {% endfor %}-->
+    </table>
+</body>    
+</html>

@@ -1,0 +1,15 @@
+<div>
+    <h1><a href="/">Phone list</a></h1>
+</div> 
+
+{% for phone in phones %}
+    <div>
+        <p> phone model:{{ phone.model_name }} </p>
+        <h1> {{ phone.price }} </h1>
+    </div>
+    <li><a href="{% url 'detail' phone.id %}">{{ phone.model_name }}</a></li>
+    <br>
+    <h2> {{phone.url}}</h2>
+    <img src = 'https://softech.kg/image/cache/catalog/Products/Phones/Huawei/P%209/437806-800x600-product_popup.jpg' >
+{% endfor %}
+
